@@ -1,11 +1,9 @@
 // This module implements a Boolean automaton generator based on user-defined transition relations in propositional logic.
-// Author: Copilot
 import * as fs from 'fs';
 import * as path from 'path';
 /**
  * Boolean Automaton Generator
  * Based on user-defined transition relations in propositional logic.
- * Author: GitHub Copilot
 */
 // Core generator implementation
 /**
