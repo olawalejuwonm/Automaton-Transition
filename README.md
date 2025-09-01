@@ -20,6 +20,7 @@ Run the generator:
 
 ```powershell
 npm start -- <transitions file>
+npm start -- transitions.txt
 ```
 
 ## Requirements
