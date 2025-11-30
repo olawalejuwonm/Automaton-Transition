@@ -1,3 +1,2 @@
-x’ ≡ ¬ x ∧ y
-y’ ≡ b ∧ y
-z’ ≡ a ⊕ y
+A’ ≡ reqA ∧ ¬ B
+B’ ≡ reqB  ∧ ¬ A’

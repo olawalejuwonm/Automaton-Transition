@@ -22,6 +22,13 @@ Run the generator:
 npm start -- <transitions file>
 npm start -- transitions.txt
 ```
+Example transitions file format:
+
+```
+x’ ≡ ¬ x ∧ y
+y’ ≡ b ∧ y
+z’ ≡ a ⊕ y
+```
 
 ## Requirements
 
