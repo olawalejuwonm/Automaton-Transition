@@ -103,7 +103,8 @@ function main() {
     return varNames.map(v => `${v}: ${values[v] ? '1' : '0'}`).join(', ');
   }
   
-  console.log(['State','Input','Next'].join('\t'));
+  let lineNumber = 1;
+  console.log(['#', 'State','Input','Next'].join('\t'));
   for (const stateBits of genCombos(vars.length)) {
     const curr: Record<string,boolean> = {} as any;
     vars.forEach((v,i) => curr[v] = Boolean(stateBits[i]));
@@ -136,6 +137,7 @@ function main() {
         next[v] = Boolean((Function('curr','inp','next', 'return (' + expr + ');'))(curr, inp, next));
       });
       console.log([
+        lineNumber++,
         formatVars(vars, curr),
         formatVars(inputs, inp),
         formatVars(vars, next)
