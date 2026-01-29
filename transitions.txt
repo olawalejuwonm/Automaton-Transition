@@ -1,2 +1,2 @@
-A’ ≡ reqA ∧ ¬ B
-B’ ≡ reqB  ∧ ¬ A’
+D’ ≡ ¬(reqA ∧ reqC ∧  ¬ E)
+E’ ≡ reqB  ∧ ¬ D’

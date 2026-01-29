@@ -97,6 +97,12 @@ function main() {
   });
   const inputs = Array.from(allRefs).filter(x => !varSet.has(x)).sort();
   const updateOrder = topoSort(vars, deps);
+  
+  // Helper function to format variables with values
+  function formatVars(varNames: string[], values: Record<string,boolean>): string {
+    return varNames.map(v => `${v}: ${values[v] ? '1' : '0'}`).join(', ');
+  }
+  
   console.log(['State','Input','Next'].join('\t'));
   for (const stateBits of genCombos(vars.length)) {
     const curr: Record<string,boolean> = {} as any;
@@ -130,9 +136,9 @@ function main() {
         next[v] = Boolean((Function('curr','inp','next', 'return (' + expr + ');'))(curr, inp, next));
       });
       console.log([
-        vars.map(v => curr[v] ? '1':'0').join(''),
-        inputs.map(u => inp[u] ? '1':'0').join(''),
-        vars.map(v => next[v] ? '1':'0').join('')
+        formatVars(vars, curr),
+        formatVars(inputs, inp),
+        formatVars(vars, next)
       ].join('\t'));
     }
   }
