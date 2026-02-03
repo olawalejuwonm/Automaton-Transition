@@ -1,0 +1,53 @@
+Detailed AIGER File Information:aag 9 1 3 0 5 1
+INPUT A with value: 2
+Total number of inputs: 1
+LATCH X => 4 with value: 10 and initial value: 1
+LATCH Y => 6 with value: 6 and initial value: 1
+LATCH Z => 8 with value: 16 and initial value: 0
+Output (safety property): 18
+AND gate: 10 5 6 
+AND gate: 12 3 7 
+AND gate: 14 2 6 
+AND gate: 16 13 15 
+AND gate: 18 5 7 
+
+=== Decorated Var Names ===
+Key = A, Value = 2
+Key = X, Value = 4
+Key = Y, Value = 6
+Key = Z, Value = 8
+
+=== Decorated Var Names Next Cycle ===
+Key = A_1, Value = 2
+Key = X_1, Value = 4
+Key = Y_1, Value = 6
+Key = Z_1, Value = 8
+
+=== Decorated Latch Variables ===
+Key = X_LATCH, Value = 10
+Key = Y_LATCH, Value = 6
+Key = Z_LATCH, Value = 16
+
+=== Decorated Trees ===
+Key = X_LATCH_NEG_5, Value = 5
+Key = NEGATION_OF_SwanLLVerifier.ETCSDC_Properties.Operators.Predicate (X), Value = 5
+Key = X_LATCH_AND_10_5_6, Value = 10
+Key = Z_LATCH_NEG_3, Value = 3
+Key = NEGATION_OF_SwanLLVerifier.ETCSDC_Properties.Operators.Predicate (A), Value = 3
+Key = Z_LATCH_NEG_7, Value = 7
+Key = NEGATION_OF_SwanLLVerifier.ETCSDC_Properties.Operators.Predicate (Y), Value = 7
+Key = Z_LATCH_AND_12_3_7, Value = 12
+Key = Z_LATCH_NEG_13, Value = 13
+Key = NEGATION_OF_SwanLLVerifier.ETCSDC_Properties.Operators.Brackets (), Value = 13
+Key = Z_LATCH_AND_14_2_6, Value = 14
+Key = Z_LATCH_NEG_15, Value = 15
+Key = Z_LATCH_AND_16_13_15, Value = 16
+Key = SAFETY, Value = 4
+Key = SAFETY_NEG_5, Value = 5
+Key = SAFETY_NEG_7, Value = 7
+Key = SAFETY_AND_18_5_7, Value = 18
+
+=== Latch Names And Values ===
+Key = X_LATCH, Value = False
+Key = Y_LATCH, Value = False
+Key = Z_LATCH, Value = False

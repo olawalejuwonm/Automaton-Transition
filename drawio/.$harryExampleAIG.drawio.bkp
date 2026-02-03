@@ -1,0 +1,137 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6">
+  <diagram name="Harry AIG Example" id="harry-aig-example">
+    <mxGraphModel dx="1263" dy="608" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Info Block -->
+        <mxCell id="info-aiger" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;" value="&lt;div&gt;aag 4 0 2 0 2 1&lt;/div&gt;&lt;div&gt;2 6 1&lt;/div&gt;&lt;div&gt;4 4 1&lt;/div&gt;&lt;div&gt;8&lt;/div&gt;&lt;div&gt;6 3 4&lt;/div&gt;&lt;div&gt;8 3 5&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="120" x="500" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="info-logic" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;" value="&lt;div&gt;X_1 = ¬X /\ Y&lt;/div&gt;&lt;div&gt;Y_1 = Y&lt;/div&gt;&lt;div&gt;Safety: ¬X /\ ¬Y&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="500" y="200" as="geometry" />
+        </mxCell>
+
+        <!-- Latches -->
+        <mxCell id="latch-x" parent="1" style="whiteSpace=wrap;html=1;" value="X = 1" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="latch-y" parent="1" style="whiteSpace=wrap;html=1;" value="Y = 1" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="320" as="geometry" />
+        </mxCell>
+
+        <!-- AND Gates -->
+        <mxCell id="gate-6" parent="1" style="shape=or;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="80" width="60" x="340" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="gate-8" parent="1" style="shape=or;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="80" width="60" x="340" y="440" as="geometry" />
+        </mxCell>
+
+        <!-- Literal Labels -->
+        <mxCell id="label-2" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#3333FF;" value="2" vertex="1">
+          <mxGeometry height="26" width="25" x="140" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="label-4" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#3333FF;" value="4" vertex="1">
+          <mxGeometry height="26" width="25" x="140" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="label-6" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#3333FF;" value="6" vertex="1">
+          <mxGeometry height="26" width="25" x="380" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="label-8" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#3333FF;" value="8" vertex="1">
+          <mxGeometry height="26" width="25" x="380" y="460" as="geometry" />
+        </mxCell>
+
+        <!-- Input labels for AND gates (including negations) -->
+        <mxCell id="label-3-for-gate6" parent="1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#3333FF;" value="3" vertex="1">
+          <mxGeometry height="30" width="60" x="270" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="label-4-for-gate6" parent="1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#3333FF;" value="4" vertex="1">
+          <mxGeometry height="30" width="60" x="270" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="label-3-for-gate8" parent="1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#3333FF;" value="3" vertex="1">
+          <mxGeometry height="30" width="60" x="270" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="label-5-for-gate8" parent="1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#3333FF;" value="5" vertex="1">
+          <mxGeometry height="30" width="60" x="270" y="495" as="geometry" />
+        </mxCell>
+
+        <!-- Edges -->
+        
+        <!-- X to AND 6 (Negated 3) -->
+        <mxCell id="edge-x-to-6" edge="1" parent="1" source="latch-x" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="gate-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- X to AND 8 (Negated 3) -->
+        <mxCell id="edge-x-to-8" edge="1" parent="1" source="latch-x" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="gate-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="230" />
+              <mxPoint x="180" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Y to AND 6 -->
+        <mxCell id="edge-y-to-6" edge="1" parent="1" source="latch-y" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="gate-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="350" />
+              <mxPoint x="200" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Y to AND 8 (Negated 5) -->
+        <mxCell id="edge-y-to-8" edge="1" parent="1" source="latch-y" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="gate-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="350" />
+              <mxPoint x="200" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Gate 6 Output to X Next -->
+        <mxCell id="edge-6-to-x-next" edge="1" parent="1" source="gate-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="latch-x">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="240" />
+              <mxPoint x="450" y="150" />
+              <mxPoint x="80" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Y stays same (Loop back) -->
+        <mxCell id="edge-y-to-y-next" edge="1" parent="1" source="latch-y" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="latch-y">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="365" />
+              <mxPoint x="160" y="410" />
+              <mxPoint x="80" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Gate 8 Output (Safety) -->
+        <mxCell id="edge-8-output" edge="1" parent="1" source="gate-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Junctions -->
+        <mxCell id="junct-x" parent="1" style="shape=ellipse;html=1;sketch=0;perimeterSpacing=0;strokeColor=none;resizeHeight=0;resizeWidth=0;fillColor=#000000;resizable=0;connectable=0;allowArrows=0;" value="" vertex="1">
+          <mxGeometry height="16" width="17" x="172" y="222" as="geometry" />
+        </mxCell>
+        <mxCell id="junct-y" parent="1" style="shape=ellipse;html=1;sketch=0;perimeterSpacing=0;strokeColor=none;resizeHeight=0;resizeWidth=0;fillColor=#000000;resizable=0;connectable=0;allowArrows=0;" value="" vertex="1">
+          <mxGeometry height="16" width="17" x="192" y="342" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
